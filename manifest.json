@@ -1,0 +1,13 @@
+{
+  "name": "WikiTracker",
+  "version": "1.0",
+  "description": "Track your Wikipedia History",
+  "permissions": ["activeTab", "declarativeContent", "storage", "history"],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "Wikipedia-W.png"
+    }
+  },
+  "manifest_version": 2
+}
