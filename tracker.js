@@ -47,7 +47,9 @@ function buildTypedUrlList(divName) {
 			if (urlArray[i].url.startsWith("https")){
 				a.href = urlArray[i].url;
 			}
-			a.appendChild(document.createTextNode(urlArray[i].title));
+			title = urlArray[i].title.split(' -');
+			title = title[0];
+			a.appendChild(document.createTextNode(title));
 			a.addEventListener('click', onAnchorClick);
 			var li = document.createElement('li');
 			li.appendChild(a);
